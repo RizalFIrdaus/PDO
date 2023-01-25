@@ -5,8 +5,8 @@ require_once __DIR__ . "/ConDB.php";
 try {
     $con = conDB();
     $sql = <<<sql
-    INSERT INTO customer(id,name,email) 
-    VALUES ("1","Rizal", "rizal@gmail.com");
+    INSERT INTO customer(name,email) 
+    VALUES ("Esan", "Esan@gmail.com");
     sql;
 
     $con->exec($sql);
